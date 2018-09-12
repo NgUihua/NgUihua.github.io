@@ -15,7 +15,7 @@ module.exports = {
     ],
     output: {
         path: path.resolve(__dirname, '../'),     // 将打包好的文件放在此路径下，dev模式中，只会在内存中存在，不会真正的打包到此路径
-        // publicPath: '/client/dist/',        // 文件解析路径，index.html中引用的路径会被设置为相对于此路径
+        publicPath: './',        // 文件解析路径，index.html中引用的路径会被设置为相对于此路径
         filename: 'js/[name]-[hash].js'
     },
     module: {
@@ -43,8 +43,10 @@ module.exports = {
                             },
                         },
                         "sass-loader"
-                    ]
+                    ],
+                    publicPath: '../'
                 }),
+
             },
             {
                 // 文件解析
