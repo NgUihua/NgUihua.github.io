@@ -1,0 +1,63 @@
+.header-inner {
+    width: 240px;
+    background: #fff;
+
+    .brand-wrapper {
+        .meta {
+            background: $black;
+            padding: 20px 0;
+
+            .logo-title {
+                color: $white;
+                text-align: center;
+                line-height: 36px;
+                font-size: 24px;
+            }
+
+            .subtitle {
+                color: $gray-a;
+                text-align: center;
+                font-size: 12px;
+                margin-top: 10px;
+            }
+        }
+    }
+
+    .nav-wrapper {
+        color: $lightBlack;
+
+        .menu {
+            margin-top: 20px;
+            margin-bottom: 16px;
+            .menu-item {
+                position: relative;
+
+                a {
+                    display: block;
+                    font-size: 13px;
+                    padding: 7px 20px;
+
+                    .menu-item-icon {
+                        margin-right: 5px;
+                    }
+
+                    &.menu-item-active {
+                        background: $gray-b;
+
+                        &:after {
+                            content: " ";
+                            position: absolute;
+                            top: 50%;
+                            margin-top: -3px;
+                            right: 15px;
+                            width: 6px;
+                            height: 6px;
+                            border-radius: 50%;
+                            background-color: #bbb;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

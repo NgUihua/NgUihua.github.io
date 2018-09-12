@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: $bdGray;
+    font-family: $fontFamily;
+}
+
+li {
+    list-style-type: none;
+    margin: 0;
+}
+
+i {
+    font-style: normal;
+}
+
+a {
+    cursor: pointer;
+}
+
+*, *:after, *:before {
+    box-sizing: border-box;
+}
